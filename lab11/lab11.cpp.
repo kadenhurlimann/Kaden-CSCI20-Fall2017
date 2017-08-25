@@ -1,0 +1,6 @@
+randomly select a hole real number from 1-10 and go to next step
+ask the user to "select a number between 1-10" and go to next step
+if the new submitted number matches the previously randomly selected number then tell the user "you have won"
+if the number does not match then find if the submitted number is lower than the randomly selected number say to user "higher" if the submitted number is higher than the randomly selected number say to user "lower" and go to next step
+ask the user to "try again" and go to next step
+go to step 3
