@@ -1,12 +1,12 @@
 //Created By: April Browne                               //   comments
 //Created On: 8/22/2016                                 //   comments
  
- #include <iostream>  //   preprocessor directives
- using namespace std;   //   preprocessor directives
+ #include <iostream>                                    //   preprocessor directives
+ using namespace std;                                  //   preprocessor directives
  
- int main()
+ int main()                                             // main function
  {
-     cout<<"Hello"<<"World!"<<endl;  // main function
+     cout<<"Hello"<<"World!"<<endl;
  }
  
  {  
