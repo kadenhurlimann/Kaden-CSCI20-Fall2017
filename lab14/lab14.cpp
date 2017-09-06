@@ -16,6 +16,7 @@ int main()
 
     cout.setf(ios::fixed);
     double input=0.0 ;            //users input in change
+    int inputs=0;                 //a buffer used for calculating modulo
     int output=0 ;                //a buffer used for calculation
     int quarter=0 ;               
     int dime=0 ;
@@ -35,9 +36,10 @@ int main()
     
     finalOutput=input-(input*0.109) ;         //calculating the machine fee
     finalInput=input/100 ;                    // forcing machine to output in change
+    inputs=input;
     
     quarter=input/25 ;                        //finding quarters
-    quarterToDime=input-quarter*(25) ;        //finding remainders
+    quarterToDime=inputs%25 ;                 //finding remainders
     dime=quarterToDime/10 ;                   //finding dimes
     dimeToNickel=quarterToDime-dime*(10) ;    //finding remainders
     nickel=dimeToNickel/5 ;                   //finding nickels
