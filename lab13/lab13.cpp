@@ -38,7 +38,7 @@ int main()
      // f=e*60;      // minutes in hour
      // g=f*60;      // seconds in minute
      // h=g/12;      // divided by net gain
-      k=c*10;        
+      k=c/10;        
       j=h+k;       // added to original pop
       
     l=b+2017;
