@@ -21,8 +21,11 @@ int main()
     string EMOTION = "people" ;
     string ForeignPhrase ="Adios" ;
     
+    cout << "" << endl ;
+    cout << "" << endl ;
     cout << "Please type words that match the description or word type when prompted." << endl ;
     cout << "Do not use any puntaution or spaces, only letters." << endl ;                           // explainging the prompt to user
+    cout << endl ;
     cout << "Noun" << endl ;
     cin >> NOUN1 ;
     cout << "Noun" << endl ;
@@ -59,7 +62,7 @@ int main()
     cout << "" << endl ;
     cout << "" << endl ;
     cout << "" << endl ;
-    cout << "Your custom madlib (base off a madlib I found on reddit) is..." << endl ;
+    cout << "Your custom madlib (based off a madlib I found on reddit) is..." << endl ;
     cout << "" << endl ;
     cout << "" << endl ;
     cout << "" << endl ;
