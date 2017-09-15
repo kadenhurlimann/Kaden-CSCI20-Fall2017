@@ -37,6 +37,7 @@ using namespace std ;
     };
 int main()
     {
+        cout.setf(ios::fixed);
        idData employeeOne;                                   // initiate only used struct
         employeeOne.company = "Hank's tire and food";
         string firstName = "bill";                                 // first and last as two sepperate variables
@@ -125,17 +126,17 @@ int main()
         cout << "      ________________________________________________________________________________________" << endl;
         cout << "     | Income    Rate     Hours     Current Total   |     Deductions     Current Total       |" << endl;
         cout << "     |                                              |                                        |" << endl;
-        cout << "     | WAGES     "<<hourlyPay<<"    "<<hoursWorked<<"         $" << currentTotal << "          |     insurance      $" << medTax << "            |" << endl;
+        cout << setprecision(2) << "     | WAGES     "<<hourlyPay<<"    "<<hoursWorked<<"         $" << currentTotal << "          |     insurance      $" << medTax << "            |" << endl;
         cout << "     |                                              |     FED TAX        $" << fedTax << "             |" << endl;
         cout << "     | reimbursement      Miles                     |                                        |" << endl;                                                                        // final paystub display with user info plugged in
         cout << "     | -------------------------------------------- |                                        |" << endl;
-        cout << "     | Milage            " << totalMiles << "         $" << mileageReimbursement << "           |                                        |" << endl;
+        cout << setprecision(2) <<"     | Milage            " << totalMiles << "         $" << mileageReimbursement << "           |                                        |" << endl;
         cout << "     |                                              |                                        |" << endl;
         cout << "     |                                              |                                        |" << endl;
         cout << "     |                                              |                                        |" << endl;
         cout << "     |______________________________________________|________________________________________|" << endl;
         cout << "     |     Current Total                   Current Deductions              Net Pay           |" << endl;
-        cout << "     |    $" << finalTotal << "                                " << currentDeductions << "                   " << netPay << "           |" << endl;
+        cout << setprecision(2) << "     |    $" << finalTotal << "                                " << currentDeductions << "                   " << netPay << "           |" << endl;
         cout << "      _______________________________________________________________________________________ " << endl;
         
         
