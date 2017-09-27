@@ -47,7 +47,7 @@ int main ()
         
         cout << "enter two numbers" << endl;                           // prompt user
         cin >> firstNum >> lastNum;                                              // prompt user
-        swap (firstNum,lastNum);                                                 // call swap
+                                
         random (firstNum,lastNum);                                               // random number gen
         
         
