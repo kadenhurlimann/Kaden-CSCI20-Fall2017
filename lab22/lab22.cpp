@@ -16,7 +16,11 @@ void randnum100()
 
 int main()
     {
+        
+        
       
       randnum100();
+      
+      
       
     }
