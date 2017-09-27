@@ -27,6 +27,7 @@ void random (int& first, int& last){                                            
     
     
     
+     swap (first,last);                                                 // call swap
     dif =(last-first)+1;                                                        // calculating difference
      srand(time(0));                                                            // setting time to random to time
     final =(rand()%dif)+first;                                                  // calculating random
