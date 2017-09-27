@@ -8,13 +8,15 @@ using namespace std;
 
 void swap (int& first, int& last) {                                                           // function to swap the two numbers
    
-   int hold;                                                                    // place holder variable
+   if (first > last) {
+       int hold;                                                                    // place holder variable
     hold=first;
     first=last;                                                                 // actual swap
     last=hold;
     
-    return;
     
+   }
+    return;
 }
 
 void random (int& first, int& last){                                                          // function to unswap and calc random number
@@ -23,9 +25,7 @@ void random (int& first, int& last){                                            
      int dif=0;                                                                 // a variable to hold the diference of first and last
      int hold;                                                                  // another place holder for swapping
     
-    hold=first;
-    first=last;                                                                 // swapping variables
-    last=hold;
+    
     
     dif =(last-first)+1;                                                        // calculating difference
      srand(time(0));                                                            // setting time to random to time
@@ -44,7 +44,7 @@ int main ()
         int lastNum =0;
         
         
-        cout << "enter smallest number first" << endl;                           // prompt user
+        cout << "enter two numbers" << endl;                           // prompt user
         cin >> firstNum >> lastNum;                                              // prompt user
         swap (firstNum,lastNum);                                                 // call swap
         random (firstNum,lastNum);                                               // random number gen
