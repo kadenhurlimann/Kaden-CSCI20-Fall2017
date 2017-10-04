@@ -84,7 +84,7 @@ int main ()
         int lastNum =0;
         
         
-        cout << "enter two numbers" << endl;                           // prompt user
+        cout << "enter two numbers" << endl;                                    // prompt user
         cin >> firstNum >> lastNum;                                              // prompt user
           
         random (firstNum,lastNum);                                               // random number gen
