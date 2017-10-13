@@ -130,7 +130,7 @@ int main()
     Winner.FindRaceSplit();
     
     DifferenceTime=User.GetRaceTimeS()-Winner.GetRaceTimeS();
-    DifferenceSpeed=Winner.GetRaceSpeed()-User.GetRaceSpeed();                      // finding race differences
+    DifferenceSpeed=Winner.GetRaceSpeed()-User.GetRaceSpeed();                  // finding race differences
     DifferenceSplit=User.GetRaceSplit()-Winner.GetRaceSplit();
     
     
@@ -155,6 +155,48 @@ int main()
     cout << "The winner had splits " << DifferenceSplit << " seconds faster than yours." << endl;
     
 }
+
+
+
+
+
+
+/*
+Please enter the race distance in miles
+1 
+
+Please enter the first place time in this fashion
+minutes seconds Example: 5 45
+3 50
+
+Please enter your time in this fashion
+minutes seconds Example: 6 45
+4 10
+
+
+
+
+
+The race was 5280 feet, or 1609.34 meters.
+
+
+   You
+You ran it in 250 seconds
+You ran 21.12 feet per second, or 6.43738 meters per second.
+You had about 62.5 second 1/4 mile splits.
+
+
+   Winner
+The winner ran it in 230 seconds.
+The winner ran 22.9565 feet per second, or 6.99715 meters per second.
+The Winner had about 57.5 second 1/4 mile splits.
+
+
+   Difference
+You finished 20 seconds behind the winner.
+The winner ran 1.83652 feet per second faster than you.
+The winner had splits 5 seconds faster than yours.
+*/
 
     
     
