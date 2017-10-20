@@ -60,7 +60,7 @@ int main()
     }
     
       
-    for ( int i=10; i>0; --i)                                                   // count down from the value i
+    for ( int i=10; i>0; --i)                                                       // count down from the value i
     {    
         cout << i << endl;
     }
