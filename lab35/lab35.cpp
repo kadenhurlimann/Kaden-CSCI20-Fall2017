@@ -79,13 +79,13 @@ class TemperatureConverter
     
     double GetTempAsCelsius()
     {
-        double celsius=0;
+        double celsius;
         celsius=kelvin_ - 273.15;
         return celsius;
     }
     double GetTempAsFahrenheit()
     {
-        double fahrenheit=0;
+        double fahrenheit;
         fahrenheit=(((kelvin_-273.15)*9)/5 + 32);
         return fahrenheit;
     }
