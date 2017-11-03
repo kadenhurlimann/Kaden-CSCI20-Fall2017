@@ -23,6 +23,7 @@ int main()
     int cart[200];
     int purchased=0;
     int selected;
+    int j=0;
     
     while (selected != 100)
     {
@@ -57,13 +58,13 @@ int main()
     }
     else
     {
-        int i=0;
+       
     
         total = total+price[selected];
         inventory[selected]=inventory[selected]-1;
-        cart[i]=selected;
+        cart[j]=selected;
         purchased=purchased+1;
-        ++i;
+        ++j;
     }
     }
     }
@@ -73,7 +74,8 @@ int main()
     
     for (int i=0; i<purchased; ++i)
     {
-     cout << name[i] << "  $" << price[i] << endl;
+     
+     cout << name[cart[i]] << "  $" << price[cart[i]] << endl;
     }
     
     cout<< "Your total is $" << total<< endl;
