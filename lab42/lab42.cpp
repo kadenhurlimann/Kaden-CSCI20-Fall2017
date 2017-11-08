@@ -19,7 +19,7 @@ int main()
     int items=10;
     string name[10]   {"sand","grapes","windows vista","fishing pole","steak","ladder","toilet paper","keyboard","piano","mazda"};
     int inventory[10] {  50,   4,        200,             1,             8,      465,      10,           24,       235,    2000 };
-    double price[10]  {   38,    38,        38,            38,           38,    38,        38,            38,       38,     39 };
+    double price[10]  {   38,    38,        38,            38,           38,    38,        38,            38,       38,     39  };
     int cart[200];
     int purchased=0;
     int selected;
