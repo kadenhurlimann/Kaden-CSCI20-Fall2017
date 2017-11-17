@@ -39,7 +39,7 @@ int main()
             cout << "Please enter both names again." << endl;
         }
        
-        if (first==last)                                           // checking if the names match
+        if (first==last)                                                        // checking if the names match
         {
             cout << "Your first and last name cannot be the same." << endl;    
             cout << "Please enter both names again." << endl;
@@ -53,9 +53,9 @@ int main()
     optionOne.append(last);                                                     // puts the last name at the end of optionOne
     
     optionTwo="cali$wag_";                                              // copies the string into optionTwo
-    optionTwo.append(first);                                                 // puts the first letter of first at end of optionTwo    
-    optionTwo.insert(10,last);// puts first 3 at end of optionTwo
-    optionTwo.resize(13);
+    optionTwo.append(first);                                                 // puts the first at end of optionTwo    
+    optionTwo.insert(10,last);                                       // puts last in at the 10 place
+    optionTwo.resize(13);                                            // delets everything after the 13th place
     
     optionThree=last;
     optionThree.append(first);
