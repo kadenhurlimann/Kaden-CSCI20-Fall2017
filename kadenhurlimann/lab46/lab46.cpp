@@ -24,13 +24,13 @@ int main()
     int entries=3;
     int average[100];
     int averageHold;
-    
+
     gradesF.open("input.txt");
      if (!gradesF.is_open()) {
       cout << "Could not open the file" << endl;
       return 1;
      }
-  
+
    for (int i=0;i<entries;i++)
    {
     averageHold=0;
@@ -41,7 +41,7 @@ int main()
      {
       gradesF >> hours[j];
       gradesF >> grades[j];
-      
+
      }
       cout << firstname[i];
       cout << lastname[i];  
@@ -57,12 +57,12 @@ int main()
      }
       cout << endl;
    }
-   
+
    for (int j=0; j<entries;j++)
    {
     for (int i=0; i<classes[j];i++)
     {
-    
+
     if (grades[i]=="A")
     {
      gradesV[i]=4;
@@ -87,14 +87,14 @@ int main()
     }
     cout << endl;
    }
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
    /*
    for(int i=0;name[i])
     gradesF >> name[0];

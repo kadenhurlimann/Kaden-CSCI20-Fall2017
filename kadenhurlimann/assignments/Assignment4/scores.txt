@@ -1,0 +1,36 @@
+Christian Smith
+Correct: 4
+Incorrect: 9
+1 2 3 5 7 9 13 18 20 
+total score: 1
+
+Paxton Jones
+Correct: 6
+Incorrect: 10
+0 1 2 4 5 8 10 12 13 20 
+total score: 3
+
+Abby Sciuto
+Correct: 7
+Incorrect: 8
+0 1 2 3 7 8 9 15 
+total score: 5
+
+Audrey Smithson
+Correct: 2
+Incorrect: 11
+0 2 3 4 6 7 8 9 13 14 15 
+total score: 0
+
+Katie Holmes
+Correct: 5
+Incorrect: 10
+0 3 7 8 9 13 14 16 18 19 
+total score: 2
+
+Carrie Grant
+Correct: 10
+Incorrect: 8
+0 2 5 6 11 15 16 17 
+total score: 8
+

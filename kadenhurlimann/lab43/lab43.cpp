@@ -30,7 +30,7 @@ class cart
     int getInventory(int value);
     double getPrice(int value);
     string getName(int value);
-    
+
 };
 
 int main()
@@ -46,6 +46,24 @@ int main()
     int selected;
     int j=0;
     
+    
+    
+    ////////////////////////////////////////
+    string nameFirst;
+    string nameLast;
+    
+    ifstream testF;
+    testF.open("test.txt");
+    if (!testF.is_open()){
+        cout << "Could not open the test file" << endl;
+        return 1;
+    }
+    testF >> nameFirst >> nameLast;
+    cart.setInventory(nameFirst,nameLast);
+    //////////////////////////////////////
+    
+    
+
     while (selected != 100)
     {
     cout << "welcome to the $38 shack"<< endl;
@@ -60,13 +78,13 @@ int main()
     cout << "7." << shack.getName(7) << "       $" << shack.getPrice(7) << endl;
     cout << "8." << shack.getName(8) << "       $" << shack.getPrice(8) << endl;
     cout << "9." << shack.getName(9) << "       $" << shack.getPrice(9) << endl << endl << endl;
-    
+
     cout << "Please enter item value to add to cart." << endl;
     cout << "to finish shopping and check out enter 100" << endl;
-    
-   
+
+
     cin >> selected;
-    
+
     if (selected > 9 || selected <0)
         {
             cout << endl << endl << "invalid item your purchase was not registered" << endl << endl;
@@ -79,8 +97,8 @@ int main()
     }
     else
     {
-       
-    
+
+
         total = total+shack.getPrice(selected);
         shack.setInventory(selected,shack.getInventory(selected)-1);
         cart[j]=selected;
@@ -89,20 +107,20 @@ int main()
     }
     }
     }
-    
+
     cout << endl << endl << endl << endl << endl
          << "thank you for shopping at the $38 shack" << endl;
-    
+
     for (int i=0; i<purchased; ++i)
     {
-     
+
      cout << shack.getName(cart[i]) << "  $" << shack.getPrice(cart[i]) << endl;
     }
-    
+
     cout<< "Your total is $" << total<< endl;
 
-    
-    
+
+
 }
 
 int cart::getInventory(int value)
@@ -110,22 +128,22 @@ int cart::getInventory(int value)
     return inventory_[value];
 }
 
-    
-    
-    
-    
+
+
+
+
 double cart::getPrice(int value)
 {
     return price_[value];
 }
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 string cart::getName(int value)
 {
     return name_[value];
