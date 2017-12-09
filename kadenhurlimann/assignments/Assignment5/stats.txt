@@ -1,0 +1,6 @@
+
+
+GivioTheCool
+weapon 0.  Splinter of wood  damage: 7
+weapon 1.  axe  damage: 21
+Kills: 3
